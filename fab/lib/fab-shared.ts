@@ -11,8 +11,8 @@ import {ActionElement, BeginPressConfig, EndPressConfig} from '@material/web/act
 import {pointerPress, shouldShowStrongFocus} from '@material/web/focus/strong-focus';
 import {MdRipple} from '@material/web/ripple/ripple';
 import {html, TemplateResult} from 'lit';
-import {property, query, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
+import {property, query, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
 
 /**
  * @soyCompatible

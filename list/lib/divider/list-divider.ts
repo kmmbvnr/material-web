@@ -7,7 +7,7 @@
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {ARIARole} from '@material/web/types/aria';
 import {html, LitElement, TemplateResult} from 'lit';
-import {property} from 'lit/decorators';
+import {property} from 'lit/decorators.js';
 
 /** @soyCompatible */
 export class ListDivider extends LitElement {

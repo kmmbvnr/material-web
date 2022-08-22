@@ -11,8 +11,8 @@
 import {observer} from '@material/web/compat/base/observer';
 import {deepActiveElementPath, doesElementContainFocus} from '@material/web/compat/base/utils';
 import {html, LitElement} from 'lit';
-import {property, query, state} from 'lit/decorators';
-import {classMap} from 'lit/directives/class-map';
+import {property, query, state} from 'lit/decorators.js';
+import {classMap} from 'lit/directives/class-map.js';
 import {styleMap} from 'lit/directives/style-map';
 
 import {MDCMenuSurfaceAdapter} from './adapter';

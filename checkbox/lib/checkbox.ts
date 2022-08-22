@@ -13,9 +13,9 @@ import {ariaProperty} from '@material/web/decorators/aria-property';
 import {pointerPress, shouldShowStrongFocus} from '@material/web/focus/strong-focus';
 import {MdRipple} from '@material/web/ripple/ripple';
 import {html, PropertyValues, TemplateResult} from 'lit';
-import {property, query, state} from 'lit/decorators';
-import {classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, query, state} from 'lit/decorators.js';
+import {classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 /** @soyCompatible */
 export class Checkbox extends ActionElement {

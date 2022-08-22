@@ -1,5 +1,5 @@
 /**
- * @requirecss {field.lib.shared_styles}
+ * @requir.css.js {field.lib.shared_styles}
  *
  * @license
  * Copyright 2021 Google LLC
@@ -8,8 +8,8 @@
 
 import {createAnimationSignal, Easing} from '@material/web/motion/animation';
 import {html, LitElement, PropertyValues, TemplateResult} from 'lit';
-import {property, queryAsync, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
+import {property, queryAsync, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
 
 /** @soyCompatible */
 export class Field extends LitElement {

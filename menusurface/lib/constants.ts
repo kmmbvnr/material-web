@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-const cssClasses = {
+const.css.jsClasses = {
   ANCHOR: 'md3-menu-surface--anchor',
   ANIMATING_CLOSED: 'md3-menu-surface--animating-closed',
   ANIMATING_OPEN: 'md3-menu-surface--animating-open',
@@ -91,4 +91,4 @@ enum Corner {
       CornerBit.FLIP_RTL,  // tslint:disable-line:no-bitwise
 }
 
-export {cssClasses, strings, numbers, CornerBit, Corner};
+export .css.jsClasses, strings, numbers, CornerBit, Corner};

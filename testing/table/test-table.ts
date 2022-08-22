@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import {customElement} from 'lit/decorators';
+import {customElement} from 'lit/decorators.js';
 
 import {TestTable} from './lib/test-table';
-import {styles as testTableStyles} from './lib/test-table-styles.css';
+import {styles as testTableStyles} from './lib/test-table-styles.css.js';
 
 export {TestTableTemplate} from './lib/test-table';
 

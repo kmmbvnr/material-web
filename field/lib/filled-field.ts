@@ -5,8 +5,8 @@
  */
 
 import {html, TemplateResult} from 'lit';
-import {state} from 'lit/decorators';
-import {ClassInfo} from 'lit/directives/class-map';
+import {state} from 'lit/decorators.js';
+import {ClassInfo} from 'lit/directives/class-map.js';
 import {styleMap} from 'lit/directives/style-map';
 
 import {Field} from './field';

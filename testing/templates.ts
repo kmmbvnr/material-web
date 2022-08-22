@@ -7,7 +7,7 @@
 import {TemplateResult} from 'lit';
 import {DirectiveResult} from 'lit/directive';
 import {ref} from 'lit/directives/ref';
-import {literal, StaticValue} from 'lit/static-html';
+import {literal, StaticValue} from 'lit/static-html.js';
 
 import {Harness, HarnessElement, isElementWithHarness} from './harness';
 import {TestTableTemplate} from './table/test-table';

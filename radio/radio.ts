@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import {customElement} from 'lit/decorators';
+import {customElement} from 'lit/decorators.js';
 
 import {Radio} from './lib/radio';
-import {styles} from './lib/radio-styles.css';
+import {styles} from './lib/radio-styles.css.js';
 
 declare global {
   interface HTMLElementTagNameMap {

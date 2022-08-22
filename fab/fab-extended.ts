@@ -7,13 +7,13 @@
 import '@material/web/icon/icon';
 
 import {html, TemplateResult} from 'lit';
-import {customElement} from 'lit/decorators';
+import {customElement} from 'lit/decorators.js';
 
-import {styles as overlayStyles} from '../elevation/lib/elevation-overlay-styles.css';
+import {styles as overlayStyles} from '../elevation/lib/elevation-overlay-styles.css.js';
 
 import {FabExtended} from './lib/fab-extended';
-import {styles as extendedStyles} from './lib/fab-extended-styles.css';
-import {styles as sharedStyles} from './lib/fab-shared-styles.css';
+import {styles as extendedStyles} from './lib/fab-extended-styles.css.js';
+import {styles as sharedStyles} from './lib/fab-shared-styles.css.js';
 
 declare global {
   interface HTMLElementTagNameMap {

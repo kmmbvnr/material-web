@@ -12,9 +12,9 @@ import {pointerPress, shouldShowStrongFocus} from '@material/web/focus/strong-fo
 import {MdRipple} from '@material/web/ripple/ripple';
 import {ARIAHasPopup} from '@material/web/types/aria';
 import {html, TemplateResult} from 'lit';
-import {property, query, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, query, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 /** @soyCompatible */
 export abstract class IconButton extends ActionElement {

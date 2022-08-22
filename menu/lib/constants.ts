@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-const cssClasses = {
+const.css.jsClasses = {
   MENU_SELECTED_LIST_ITEM: 'md3-menu-item--selected',
   MENU_SELECTION_GROUP: 'md3-menu__selection-group',
   ROOT: 'md3-menu',
@@ -30,4 +30,4 @@ enum DefaultFocusState {
   LAST_ITEM = 'LAST_ITEM',
 }
 
-export {cssClasses, strings, numbers, DefaultFocusState};
+export .css.jsClasses, strings, numbers, DefaultFocusState};

@@ -7,8 +7,8 @@
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {ARIARole} from '@material/web/types/aria';
 import {html, LitElement, PropertyValues, TemplateResult} from 'lit';
-import {property, query, queryAssignedElements} from 'lit/decorators';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, query, queryAssignedElements} from 'lit/decorators.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {ListItem} from './listitem/list-item';
 

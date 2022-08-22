@@ -1,5 +1,5 @@
 /**
- * @requirecss {segmentedbuttonset.lib.shared_styles}
+ * @requir.css.js {segmentedbuttonset.lib.shared_styles}
  *
  * @license
  * Copyright 2021 Google LLC
@@ -8,9 +8,9 @@
 
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {html, LitElement, TemplateResult} from 'lit';
-import {property, queryAssignedElements} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, queryAssignedElements} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {SegmentedButton} from '../../segmentedbutton/lib/segmented-button';
 

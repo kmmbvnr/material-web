@@ -5,7 +5,7 @@
  */
 
 import {TemplateResult} from 'lit';
-import {ClassInfo} from 'lit/directives/class-map';
+import {ClassInfo} from 'lit/directives/class-map.js';
 
 import {FabShared} from './fab-shared';
 

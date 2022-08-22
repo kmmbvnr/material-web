@@ -8,8 +8,8 @@ import 'jasmine';
 
 import {Environment} from '@material/web/testing/environment';
 import {html, LitElement} from 'lit';
-import {customElement, property, query} from 'lit/decorators';
-import {ifDefined} from 'lit/directives/if-defined';
+import {customElement, property, query} from 'lit/decorators.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {ariaProperty} from '../aria-property';
 

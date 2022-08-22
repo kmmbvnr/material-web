@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import {customElement} from 'lit/decorators';
+import {customElement} from 'lit/decorators.js';
 
-import {styles} from '../list/lib/listitem/list-item-styles.css';
+import {styles} from '../list/lib/listitem/list-item-styles.css.js';
 
 import {MenuItem} from './lib/menuitem/menu-item';
 

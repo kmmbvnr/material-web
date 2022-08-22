@@ -8,7 +8,7 @@ import 'jasmine';
 
 import {Environment} from '@material/web/testing/environment';
 import {html, LitElement, TemplateResult} from 'lit';
-import {customElement, property} from 'lit/decorators';
+import {customElement, property} from 'lit/decorators.js';
 
 import {FormController, FormElement, getFormValue} from './form-controller';
 

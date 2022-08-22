@@ -6,14 +6,14 @@
 
 import '@material/web/field/outlined-field';
 
-import {customElement} from 'lit/decorators';
-import {literal} from 'lit/static-html';
+import {customElement} from 'lit/decorators.js';
+import {literal} from 'lit/static-html.js';
 
 // TODO(b/236285090): update with HCM best practices
-import {styles as outlinedForcedColorsStyles} from './lib/outlined-forced-colors-styles.css';
-import {styles as outlinedStyles} from './lib/outlined-styles.css';
+import {styles as outlinedForcedColorsStyles} from './lib/outlined-forced-colors-styles.css.js';
+import {styles as outlinedStyles} from './lib/outlined-styles.css.js';
 import {OutlinedTextField} from './lib/outlined-text-field';
-import {styles as sharedStyles} from './lib/shared-styles.css';
+import {styles as sharedStyles} from './lib/shared-styles.css.js';
 
 declare global {
   interface HTMLElementTagNameMap {

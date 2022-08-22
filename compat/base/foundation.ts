@@ -5,7 +5,7 @@
  */
 
 export class MDCFoundation<AdapterType extends {} = {}> {
-  static get cssClasses(): {[key: string]: string} {
+  static get.css.jsClasses(): {[key: string]: string} {
     // Classes extending MDCFoundation should implement this method to return an
     // object which exports every CSS class the foundation class needs as a
     // property. e.g. {ACTIVE: 'mdc-component--active'}
@@ -59,7 +59,7 @@ export interface MDCFoundationConstructor<AdapterType extends object = any> {
  */
 export interface MDCFoundationDeprecatedConstructor<
     AdapterType extends object = any> {
-  readonly cssClasses: Record<string, string>;
+  readonly.css.jsClasses: Record<string, string>;
   readonly strings: Record<string, string>;
   readonly numbers: Record<string, number>;
   readonly defaultAdapter: AdapterType;

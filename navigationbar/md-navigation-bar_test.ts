@@ -9,8 +9,8 @@ import {fixture, rafPromise, TestFixture} from '@material/web/compat/testing/hel
 import {NavigationTabHarness} from '@material/web/navigationtab/harness';
 import {MdNavigationTab} from '@material/web/navigationtab/navigation-tab';
 import {html} from 'lit';
-import {customElement} from 'lit/decorators';
-import {ifDefined} from 'lit/directives/if-defined';
+import {customElement} from 'lit/decorators.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {MdNavigationBar} from './navigation-bar';
 

@@ -1,5 +1,5 @@
 /**
- * @requirecss {button.lib.shared_styles}
+ * @requir.css.js {button.lib.shared_styles}
  *
  * @license
  * Copyright 2019 Google LLC
@@ -15,11 +15,11 @@ import {ariaProperty} from '@material/web/decorators/aria-property';
 import {pointerPress, shouldShowStrongFocus} from '@material/web/focus/strong-focus';
 import {MdRipple} from '@material/web/ripple/ripple';
 import {ARIAHasPopup} from '@material/web/types/aria';
-import {html as staticHtml, literal} from 'lit/static-html';
+import {html as staticHtml, literal} from 'lit/static-html.js';
 import {html, TemplateResult} from 'lit';
-import {property, query, queryAssignedElements, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, query, queryAssignedElements, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {ButtonState} from './state';
 

@@ -7,12 +7,12 @@
 import '@material/web/icon/icon';
 
 import {html, TemplateResult} from 'lit';
-import {customElement} from 'lit/decorators';
-import {ClassInfo} from 'lit/directives/class-map';
+import {customElement} from 'lit/decorators.js';
+import {ClassInfo} from 'lit/directives/class-map.js';
 
-import {styles as sharedStyles} from './lib/icon-button-styles.css';
+import {styles as sharedStyles} from './lib/icon-button-styles.css.js';
 import {IconButtonToggle} from './lib/icon-button-toggle';
-import {styles} from './lib/outlined-styles.css';
+import {styles} from './lib/outlined-styles.css.js';
 
 declare global {
   interface HTMLElementTagNameMap {

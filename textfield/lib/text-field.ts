@@ -1,5 +1,5 @@
 /**
- * @requirecss {textfield.lib.shared_styles}
+ * @requir.css.js {textfield.lib.shared_styles}
  *
  * @license
  * Copyright 2021 Google LLC
@@ -11,11 +11,11 @@ import {FormController, getFormValue} from '@material/web/controller/form-contro
 import {stringConverter} from '@material/web/controller/string-converter';
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {html, LitElement, PropertyValues, TemplateResult} from 'lit';
-import {property, query, queryAssignedElements, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
-import {live} from 'lit/directives/live';
-import {html as staticHtml, StaticValue} from 'lit/static-html';
+import {property, query, queryAssignedElements, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
+import {live} from 'lit/directives/live.js';
+import {html as staticHtml, StaticValue} from 'lit/static-html.js';
 
 /**
  * Input types that are compatible with the text field.

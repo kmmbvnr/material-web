@@ -9,8 +9,8 @@ import '@material/web/field/filled-field';
 
 import {Environment} from '@material/web/testing/environment';
 import {html} from 'lit';
-import {customElement} from 'lit/decorators';
-import {literal} from 'lit/static-html';
+import {customElement} from 'lit/decorators.js';
+import {literal} from 'lit/static-html.js';
 
 import {TextFieldHarness} from '../harness';
 

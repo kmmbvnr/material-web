@@ -5,7 +5,7 @@
  */
 
 import {MDCMenuSurfaceAdapter} from './adapter';
-import {Corner, CornerBit, cssClasses, numbers, strings} from './constants';
+import {Corner, CornerBit,.css.jsClasses, numbers, strings} from './constants';
 import {MDCMenuDimensions, MDCMenuDistance, MDCMenuPoint} from './types';
 
 interface AutoLayoutMeasurements {
@@ -18,8 +18,8 @@ interface AutoLayoutMeasurements {
 }
 
 export class MDCMenuSurfaceFoundation {
-  static get cssClasses() {
-    return cssClasses;
+  static get.css.jsClasses() {
+    return.css.jsClasses;
   }
 
   static get strings() {
@@ -112,7 +112,7 @@ export class MDCMenuSurfaceFoundation {
   }
 
   init() {
-    const {ROOT, OPEN} = MDCMenuSurfaceFoundation.cssClasses;
+    const {ROOT, OPEN} = MDCMenuSurfaceFoundation.css.jsClasses;
 
     if (!this.adapter.hasClass(ROOT)) {
       throw new Error(`${ROOT} class required in root element.`);
@@ -225,20 +225,20 @@ export class MDCMenuSurfaceFoundation {
 
     if (this.isQuickOpen) {
       this.isSurfaceOpen = true;
-      this.adapter.addClass(MDCMenuSurfaceFoundation.cssClasses.OPEN);
+      this.adapter.addClass(MDCMenuSurfaceFoundation.css.jsClasses.OPEN);
       this.dimensions = this.adapter.getInnerDimensions();
       this.autoposition();
       this.adapter.notifyOpen();
     } else {
-      this.adapter.addClass(MDCMenuSurfaceFoundation.cssClasses.ANIMATING_OPEN);
+      this.adapter.addClass(MDCMenuSurfaceFoundation.css.jsClasses.ANIMATING_OPEN);
       this.animationRequestId = requestAnimationFrame(() => {
         this.dimensions = this.adapter.getInnerDimensions();
         this.autoposition();
-        this.adapter.addClass(MDCMenuSurfaceFoundation.cssClasses.OPEN);
+        this.adapter.addClass(MDCMenuSurfaceFoundation.css.jsClasses.OPEN);
         this.openAnimationEndTimerId = setTimeout(() => {
           this.openAnimationEndTimerId = 0;
           this.adapter.removeClass(
-              MDCMenuSurfaceFoundation.cssClasses.ANIMATING_OPEN);
+              MDCMenuSurfaceFoundation.css.jsClasses.ANIMATING_OPEN);
           this.adapter.notifyOpen();
         }, numbers.TRANSITION_OPEN_DURATION);
       });
@@ -263,23 +263,23 @@ export class MDCMenuSurfaceFoundation {
         this.maybeRestoreFocus();
       }
 
-      this.adapter.removeClass(MDCMenuSurfaceFoundation.cssClasses.OPEN);
+      this.adapter.removeClass(MDCMenuSurfaceFoundation.css.jsClasses.OPEN);
       this.adapter.removeClass(
-          MDCMenuSurfaceFoundation.cssClasses.IS_OPEN_BELOW);
+          MDCMenuSurfaceFoundation.css.jsClasses.IS_OPEN_BELOW);
       this.adapter.notifyClose();
 
       return;
     }
 
-    this.adapter.addClass(MDCMenuSurfaceFoundation.cssClasses.ANIMATING_CLOSED);
+    this.adapter.addClass(MDCMenuSurfaceFoundation.css.jsClasses.ANIMATING_CLOSED);
     requestAnimationFrame(() => {
-      this.adapter.removeClass(MDCMenuSurfaceFoundation.cssClasses.OPEN);
+      this.adapter.removeClass(MDCMenuSurfaceFoundation.css.jsClasses.OPEN);
       this.adapter.removeClass(
-          MDCMenuSurfaceFoundation.cssClasses.IS_OPEN_BELOW);
+          MDCMenuSurfaceFoundation.css.jsClasses.IS_OPEN_BELOW);
       this.closeAnimationEndTimerId = setTimeout(() => {
         this.closeAnimationEndTimerId = 0;
         this.adapter.removeClass(
-            MDCMenuSurfaceFoundation.cssClasses.ANIMATING_CLOSED);
+            MDCMenuSurfaceFoundation.css.jsClasses.ANIMATING_CLOSED);
         this.adapter.notifyClose();
       }, numbers.TRANSITION_CLOSE_DURATION);
     });
@@ -349,7 +349,7 @@ export class MDCMenuSurfaceFoundation {
 
     // If it is opened from the top then add is-open-below class
     if (!this.hasBit(corner, CornerBit.BOTTOM)) {
-      this.adapter.addClass(MDCMenuSurfaceFoundation.cssClasses.IS_OPEN_BELOW);
+      this.adapter.addClass(MDCMenuSurfaceFoundation.css.jsClasses.IS_OPEN_BELOW);
     }
   }
 

@@ -7,7 +7,7 @@
 import {fixture, TestFixture} from '@material/web/compat/testing/helpers';  // TODO(b/235474830): remove the use of fixtures
 import {MdFocusRing} from '@material/web/focus/focus-ring';
 import {html} from 'lit';
-import {customElement} from 'lit/decorators';
+import {customElement} from 'lit/decorators.js';
 
 import {CheckboxHarness} from '../harness';
 

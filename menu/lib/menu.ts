@@ -12,8 +12,8 @@ import '../../menusurface/menu-surface';
 
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {html, LitElement} from 'lit';
-import {property, query} from 'lit/decorators';
-import {ifDefined} from 'lit/directives/if-defined';
+import {property, query} from 'lit/decorators.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import {List} from '../../list/lib/list';
 import {ListItem} from '../../list/lib/listitem/list-item';

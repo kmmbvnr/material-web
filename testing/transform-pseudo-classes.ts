@@ -48,12 +48,12 @@ const transformedStyleSheets = new WeakSet<CSSStyleSheet>();
  * Pseudo classes are given an underscore in their transformation. For example,
  * `:hover` transforms to `._hover`.
  *
- * ```css
+ * ``.css.js
  * .mdc-foo:hover {
  *   color: teal;
  * }
  * ```
- * ```css
+ * ``.css.js
  * .mdc-foo._hover {
  *   color: teal;
  * }
@@ -71,7 +71,7 @@ export function transformPseudoClasses(
 
     let rules: CSSRuleList;
     try {
-      rules = stylesheet.cssRules;
+      rules = stylesheet.css.jsRules;
     } catch {
       continue;
     }
@@ -97,8 +97,8 @@ function visitRule(
     rule: CSSRule, stylesheet: CSSStyleSheet|CSSGroupingRule, index: number,
     pseudoClasses: string[]) {
   if (rule instanceof CSSMediaRule || rule instanceof CSSSupportsRule) {
-    for (let i = rule.cssRules.length - 1; i >= 0; i--) {
-      visitRule(rule.cssRules[i], rule, i, pseudoClasses);
+    for (let i = rule.css.jsRules.length - 1; i >= 0; i--) {
+      visitRule(rule.css.jsRules[i], rule, i, pseudoClasses);
     }
     return;
   }
@@ -129,8 +129,8 @@ function visitRule(
           selectorText.substring(match.index! + match[1].length);
     }
 
-    const css = `${selectorText} {${rule.style.cssText}}`;
-    stylesheet.insertRule(css, index + 1);
+    const.css.js = `${selectorText} {${rule.style.css.jsText}}`;
+    stylesheet.insertRule.css.js, index + 1);
   } catch (error: unknown) {
     // Catch exception to skip the rule that cannot be parsed.
     console.error(error);

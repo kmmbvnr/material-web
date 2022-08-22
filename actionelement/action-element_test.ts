@@ -8,7 +8,7 @@ import 'jasmine';
 
 import {Environment} from '@material/web/testing/environment';
 import {html} from 'lit';
-import {customElement, property} from 'lit/decorators';
+import {customElement, property} from 'lit/decorators.js';
 
 import {ActionElement} from './action-element';
 

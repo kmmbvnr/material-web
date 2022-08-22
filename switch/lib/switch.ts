@@ -12,9 +12,9 @@ import {FormController, getFormValue} from '@material/web/controller/form-contro
 import {ariaProperty} from '@material/web/decorators/aria-property';
 import {pointerPress as focusRingPointerPress, shouldShowStrongFocus} from '@material/web/focus/strong-focus';
 import {html, TemplateResult} from 'lit';
-import {eventOptions, property, state} from 'lit/decorators';
-import {ClassInfo, classMap} from 'lit/directives/class-map';
-import {ifDefined} from 'lit/directives/if-defined';
+import {eventOptions, property, state} from 'lit/decorators.js';
+import {ClassInfo, classMap} from 'lit/directives/class-map.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 /** @soyCompatible */
 export class Switch extends ActionElement {

@@ -7,13 +7,13 @@
 import {MDCMenuSurfaceFoundation} from '../../menusurface/lib/foundation';
 
 import {MDCMenuAdapter} from './adapter';
-import {cssClasses, numbers, strings} from './constants';
+import .css.jsClasses, numbers, strings} from './constants';
 
 const LIST_ITEM_DISABLED_CLASS = 'md3-list-item--disabled';
 
 export class MDCMenuFoundation {
-  static get cssClasses() {
-    return cssClasses;
+  static get.css.jsClasses() {
+    return.css.jsClasses;
   }
 
   static get strings() {
@@ -117,11 +117,11 @@ export class MDCMenuFoundation {
       this.adapter.removeAttributeFromElementAtIndex(
           prevSelectedIndex, strings.ARIA_CHECKED_ATTR);
       this.adapter.removeClassFromElementAtIndex(
-          prevSelectedIndex, cssClasses.MENU_SELECTED_LIST_ITEM);
+          prevSelectedIndex,.css.jsClasses.MENU_SELECTED_LIST_ITEM);
     }
 
     this.adapter.addClassToElementAtIndex(
-        index, cssClasses.MENU_SELECTED_LIST_ITEM);
+        index,.css.jsClasses.MENU_SELECTED_LIST_ITEM);
     this.adapter.addAttributeToElementAtIndex(
         index, strings.ARIA_CHECKED_ATTR, 'true');
 
